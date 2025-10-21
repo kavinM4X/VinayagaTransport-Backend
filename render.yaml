@@ -3,7 +3,7 @@ services:
     name: vinayaga-transport-backend
     env: node
     plan: free
-    buildCommand: npm install
+    buildCommand: npm ci
     startCommand: npm start
     autoDeploy: true
     healthCheckPath: /
@@ -11,5 +11,5 @@ services:
       - key: NODE_ENV
         value: production
       - key: NODE_VERSION
-        value: 25
+        value: 20
 
